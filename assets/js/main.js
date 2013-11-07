@@ -49,3 +49,4 @@ var Anchor = {
 
 //  And bind loading
 $(Anchor.init);
+

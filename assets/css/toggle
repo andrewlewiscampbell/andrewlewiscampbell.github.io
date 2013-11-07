@@ -1,0 +1,115 @@
+/* Change this to watch in slo-mo */
+$transition-duration: .5s;
+
+
+$size : 100%;
+$toggled-size : .75;
+
+.navicon-button {
+  display: inline-block;
+  position: relative;
+  padding: 2.0625rem 1.5rem;
+  transition: $transition-duration/2;
+  cursor: pointer;
+  user-select: none;
+  opacity: .8;
+  
+  .navicon:before, .navicon:after {
+    transition: $transition-duration/2;
+  }
+  
+  &:hover {
+    transition: $transition-duration;
+    opacity: 1;
+    
+    .navicon:before, .navicon:after {
+      transition: $transition-duration/2;
+    }
+    
+    .navicon:after { top: -.825rem; }
+    .navicon:before { top: .825rem; }
+  }
+}
+
+.navicon {
+  position: relative;
+  width: 2.5em;
+  height: .3125rem;
+  background: $pagebg;
+  transition: $transition-duration;
+  border-radius: 2.5rem;
+  
+  &:after, &:before {
+    display: block;
+    content: "";
+    height: .3125rem;
+    width: 2.5rem;
+    background: $pagebg;
+    position: absolute;
+    z-index: -1;
+    transition: $transition-duration ($transition-duration/2);
+    border-radius: 1rem;
+  }
+
+  &:after { top: -.625rem; }
+  &:before { top: .625rem; }
+}
+
+.open:not(.steps) .navicon:before,
+.open:not(.steps) .navicon:after {
+  top: 0 !important;
+}
+
+.open .navicon:before,
+.open .navicon:after {
+  transition: $transition-duration;
+}
+
+/* × and + */
+.open.plus,
+.open.x {
+  .navicon {
+    background: transparent;
+    
+    &:after { transform: rotate(45deg); }  
+    &:before { transform: rotate(-45deg); }  
+  }
+}
+.open.plus { transform: scale($toggled-size) rotate(45deg) }
+
+.loading .navicon {
+  color: dodgerblue;
+  box-shadow: inset 0 0;
+  transition: $transition-duration, box-shadow 0;
+}
+
+.loading .navicon { transition: 0; }
+
+.open.loading {
+  transform: none;
+
+  .navicon {
+    box-shadow: inset 2.5rem 0;
+    transition: $transition-duration, box-shadow $transition-duration*5;
+
+    
+    &:before, &:after { opacity: 0; }
+  }
+}
+
+  
+  /* Smoother animations */
+  & *,
+  & *:before,
+  & *:after {
+   transform: translate3d(0,0,0); 
+  }
+}
+
+
+@font-face {
+  font-family: 'Kite One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kite One'), local('KiteOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/kiteone/v1/VNHoD96LpZ9rGZTwjozAOnYhjbSpvc47ee6xR_80Hnw.woff) format('woff');
+}

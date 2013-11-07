@@ -579,7 +579,7 @@ header.site-header nav ul li a:hover {
 .article header hgroup {
   color: #3b3b3b;
   position: relative;
-  text-align: center;
+  text-align: left;
   width: 100%;
   margin-top: 0;
 }
@@ -682,7 +682,7 @@ header.site-header nav ul li a:hover {
 }
 .archive-wrap .post-list li h1 {
   font-size: 32px;
-  font-style: italic;
+  font-style: normal;
 }
 .archive-wrap .post-list .summary {
   font-size: 18px;

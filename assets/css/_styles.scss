@@ -13,6 +13,11 @@ body {
 
 h1,h2,h3,h4,h5 {
     font-family: $serif;
+    -moz-font-feature-settings: "liga=1, dlig=1";
+    -ms-font-feature-settings: "liga", "dlig";
+    -webkit-font-feature-settings: "liga", "dlig";
+    -o-font-feature-settings: "liga", "dlig";
+    font-feature-settings: "liga", "dlig";
 }
 
 p {
@@ -76,7 +81,7 @@ code {
     overflow-x: scroll;
 
     code {
-        color: $white;
+        color: $link;
         font-family: "Monaco", "Courier New", "Courier";
         font-size: .9em;
         .lineno {
@@ -185,11 +190,11 @@ header.site-header {
 #bump .darken {
       
       a {
-      color: $black;
+      color: $link;
       @include transit(all, .2s, ease-in-out);
 
       &:hover {
-        color: $link;
+        color: $black;
         @include transit(all, .2s, ease-in-out);
         }
       }
@@ -199,13 +204,13 @@ header.site-header {
       }
       
       nav ul li a {
-            color: $black;
+            color: $link;
             &:active {
-              color: $link;  
+              color: $black;  
             }
             &:hover {
                 text-shadow: none;
-                color: $link;
+                color: $black;
             }
         }
 
@@ -282,7 +287,7 @@ header.site-header nav {
         max-height: 800px;
         position: absolute;
         z-index: 2;
-        background: rgba(0,0,0,.55);
+        background: rgba(0,0,0,.1);
     }
     .overlay-lighter {
         background: rgba(0,0,0,.1);
@@ -424,7 +429,7 @@ header.site-header nav {
             position: relative;
             top: -3px;
             font-size: $fs5;
-            font-weight: bold;
+            font-weight: 400;
             font-family: $sans;
             font-style: normal;
             color: $grey-light;
@@ -455,7 +460,7 @@ header.site-header nav {
     }
     
     h1 {
-        font-style: italic;
+        font-style: normal;
     }
     
     h1, h2, h3, h4, h5 {
@@ -588,8 +593,8 @@ footer {
     .list-title {
         margin-bottom: $lh/2;
         border-bottom: 2px solid $link;
-        font-style: italic;
         font-size: $fs4;
+        font-family: $sans;
     }
     .prev-posts {
         @include column(6,10);
@@ -613,7 +618,7 @@ footer {
             }
             span.date {
                 float: none;
-                color: transparentize($grey-light, .4);
+                color: $white;
                 @include column(4,12);
                 position: relative;
                 font-size: $fs5;
@@ -629,7 +634,8 @@ footer {
         top: 109px;
         @include column(2,12);
         right: 5vw;
-        font-style: italic;
+        font-style: normal;
+        font-family: $sans;
         a {
             &:hover {
                 color: $white;
