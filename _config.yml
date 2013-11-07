@@ -6,15 +6,14 @@ url:
 
 # Owner/author information
 owner:
-  name:           Cole Townsend
+  name:           Andrew Campbell
   avatar:         avatar.png
-  bio:            "Aesthete & Athlete"
-  email:          cole@coletownsend.com
-  twitter:        twnsndco        
-  github:         coletownsend       
-  instagram:      ctrunsthis     
-  dribbble:       coletownsend
-  disqus:         balzac
+  bio:            "Breaker of Shit"
+  email:          andrewlewiscampbell@gmail.com
+  twitter:        andrewlcampbell        
+  github:         andrewlewiscampbell
+  instagram:      andrewlewiscampbell
+  disqus:         andrewlewiscampbell
   # Plug in your disqus shortname!
   
 
@@ -23,11 +22,11 @@ owner:
 links:
   - title: About
     url: about
-  - title: Github
+  - title: Balzac
     url: https://github.com/ColeTownsend/Balzac-for-Jekyll
     external: true
-  - title: Cole Who?
-    url: http://coletownsend.com
+  - title: Andrew
+    url: http://andrewlewiscampbell.co.uk
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
