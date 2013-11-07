@@ -2,7 +2,7 @@ title:            andrewlewiscampbell.github.io
 tagline:          github pages
 description:      Describe your website.
 #Comment out url when working locally to resolve base urls correctly
-url: http://andrewlewiscampbell.github.io
+url: http://andrewlewiscampbell.github.io/
 
 # Owner/author information
 owner:
@@ -22,7 +22,7 @@ owner:
 # For external links add external: true
 links:
   - title: About
-    url: /about
+    url: about
   - title: Github
     url: https://github.com/ColeTownsend/Balzac-for-Jekyll
     external: true
