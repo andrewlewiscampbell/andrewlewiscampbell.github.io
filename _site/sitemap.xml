@@ -5,4 +5,24 @@
     </url>
 
     
+    <url>
+        <loc>/articles/test-post</loc>
+    </url>
+    
+    <url>
+        <loc>/articles/the-little-prince</loc>
+    </url>
+    
+    <url>
+        <loc>/articles/post-with-figure</loc>
+    </url>
+    
+    <url>
+        <loc>/articles/post-with-feature</loc>
+    </url>
+    
+    <url>
+        <loc>/articles/longform-post</loc>
+    </url>
+    
 </urlset>
